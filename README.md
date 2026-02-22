@@ -3,7 +3,7 @@
 ## 1. Introduction
 In today's financial system, high-quality, personalized advice is expensive, opaque, and centralized. The **FinAdvisor AI** Subnet will be created to break down these barriers, leveraging Bittensor's incentive network to build the world's most powerful, private, and distributed financial intelligence engine.
 
-Unlike generic language models, this subnetwork will be specifically designed to process real-time market data, individual risk profiles, and long-term goals, transforming raw data into actionable, personalized strategies.
+Unlike generic language models, this subnet will be specifically designed to process real-time market data, individual risk profiles, and long-term goals, transforming raw data into actionable, personalized strategies.
 
 ## 2. Vision
 Our vision is to establish a global standard where financial advice does not depend on a banking institution, but on a decentralized network of expert nodes that compete to offer the best possible recommendation.
@@ -39,7 +39,7 @@ The reward (in TAO) that a miner receives is calculated using a function that ba
 1. **Query**: A validator submits a "Case Study" (e.g., 30-year-old investor, $10,000 USD, medium risk, 5-year horizon).
 2. **Inference**: Miners generate a custom strategy and a technical justification.
 3. **Verification**: Validators execute the strategy in a simulated environment and compare the generated alpha (extra value) to a base index (e.g., S&P 500 or BTC/ETH).
-4. **Issuance**: Miners with the best risk-relative alpha receive the largest share of the subnetwork's issuance.
+4. **Issuance**: Miners with the best risk-relative alpha receive the largest share of the subnet's issuance.
 
 ### D. Fraud Protection (Anti-Sybil)
 To prevent miners from giving random, seemingly good-sounding tips, the subnet will implement a Cross-Verification Mechanism:
@@ -68,7 +68,7 @@ Each miner operates a technology stack that includes:
 - **Portfolio Optimization Module**: Mathematical algorithms (such as Modern Portfolio Theory or Black-Litterman) that translate the AI's input into a precise percentage allocation of assets.
 
 ### C. Communication Protocol
-In our subnetwork, the _FinAdviceSynapse_ would contain:
+In our subnet, the _FinAdviceSynapse_ would contain:
 - **Inputs**: user_profile (age, capital, risk), market_context (bullish/bearish), constraints (e.g., "I don't want crypto" or "only green investments").
 - **Outputs**: allocation_strategy (list of assets), risk_metrics (VaR - Value at Risk), and reasoning (the logic behind the advice).
 
@@ -144,4 +144,27 @@ This stack is suggested, as it is at the discretion of the miners, as long as it
 - **AI Framework**: PyTorch / HuggingFace Transformers.
 - **Vector Database**: Pinecone or Milvus (for the financial news RAG).
 - **Infrastructure**: Docker + Kubernetes for scaling mining nodes.
+
+## 5. Use Cases
+The subnet acts as a Financial Intelligence API that any developer or institution can query by paying a small fee in TAO.
+
+### A. Consumer Fintech: The Personal "Financial Co-pilot"
+Neobank banking apps (like Revolut or Nubank) can connect their interface to the subnet to offer "Private Banking"-level advice to users with small amounts of capital.
+- **Scenario**: A user receives their salary. The app consults the subnet: "Design a plan to save 15%, optimizing taxes and diversifying into low-risk assets."
+- **Value**: The user receives a strategy validated by hundreds of competing models, not by a biased human advisor.
+
+### B. DeFi Protocols: Autonomous Treasury Management
+DAOs (Decentralized Autonomous Organizations) often have multimillion-dollar treasuries "sitting" in stablecoins without generating efficient returns or assuming unseen risks.
+- **Scenario**: A DAO requests the subnet: "Rebalance our treasury to achieve a 5% real APY, limiting exposure to protocols less than one year old."
+- **Value**: Miners compete to find the best yield farms and lending protocols with the lowest technical risk.
+
+### C. Wealth Management: Advisor Support Tool
+Human financial advisors can use the subnet to generate draft strategies and in-depth risk analyses in seconds.
+- **Scenario**: An advisor uploads a complex client profile. The subnet processes thousands of variables and returns a Value at Risk (VaR) report and a portfolio optimization proposal.
+- **Value**: Increases advisor productivity and reduces human error through cross-checking across the network.
+
+### D. Sentiment Analysis and Black Swan Prediction
+Due to its real-time data architecture, the subnet can act as an early warning system.
+- **Scenario**: In the event of a sudden geopolitical event, the subnet detects anomalies in sentiment and on-chain flows, automatically suggesting hedging strategies to protect capital.
+-**Value**: Prevention of catastrophic losses through distributed collective intelligence.
 
